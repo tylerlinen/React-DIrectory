@@ -11,16 +11,16 @@ class DataArea extends Component {
         API.getUsers().then(function (res) {
             console.log(res)
             this.setState({
-                users: res.data
+                users: res.data.body
             })
-                .catch(err => console.log(err));
+                .catch(err => console.log("this aint it"));
         })
     }
 
     render() {
         return (
             <div>
-                Console is ready
+                {this.state.name}
             </div>
             // this is where our JSX goes
         )
