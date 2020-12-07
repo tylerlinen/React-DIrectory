@@ -1,6 +1,8 @@
 //Class based component, This gets the information 
 import React, { Component } from "react"
 import API from "../utils/API"
+import DataTable from "./Table";
+import TableHeading from "./THead"
 
 class DataArea extends Component {
     state = {
@@ -8,20 +10,24 @@ class DataArea extends Component {
     }
 
     componentDidMount() {
-        API.getUsers().then(function (res) {
+        API.getUsers().then(res => {
             console.log(res)
             this.setState({
-                users: res.data.body
-            })
-                .catch(err => console.log("this aint it"));
+                users: res.data.results
+            }) 
+            console.log(this.state.users)
         })
     }
 
     render() {
         return (
-            <div>
-                {this.state.name}
-            </div>
+           <>
+                <TableHeading />
+                <DataTable
+                users={this.state.users}
+                
+                />
+            </>
             // this is where our JSX goes
         )
     }
