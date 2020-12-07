@@ -1,9 +1,11 @@
 import React from "react";
 import { Table } from "react-bootstrap";
+import THead from "./THead"
 
 function DataTable({ users }) {
   return (
     <Table striped bordered hover>
+        <THead />
       <tbody>
         {users[0] !== undefined && users[0].name !== undefined ? (
           users.map(({ login, name, picture, phone, email }) => {

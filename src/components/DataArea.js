@@ -2,7 +2,7 @@
 import React, { Component } from "react"
 import API from "../utils/API"
 import DataTable from "./Table";
-import TableHeading from "./THead"
+
 
 class DataArea extends Component {
     state = {
@@ -22,7 +22,6 @@ class DataArea extends Component {
     render() {
         return (
            <>
-                <TableHeading />
                 <DataTable
                 users={this.state.users}
                 
