@@ -1,6 +1,7 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 import THead from "./THead"
+import "./Table.css"
 
 function DataTable({ users }) {
   return (
@@ -12,7 +13,7 @@ function DataTable({ users }) {
             return (
               <tr key={login.uuid}>
                 <td className="align-middle">
-                  <img src={picture.thumbnail} alt={email} />
+                  <img src={picture.thumbnail} alt={email} class="image" />
                 </td>
                 <td className="firstName">{name.first}</td>
                 <td className="firstLast">{name.last}</td>

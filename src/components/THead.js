@@ -3,7 +3,7 @@ import { Table } from 'react-bootstrap'
 
 function THead() {
   return (
-    <Table striped bordered hover>
+    
       <thead>
         <tr>
           <th>Employee</th>
@@ -13,7 +13,7 @@ function THead() {
           <th>Phone Number</th>
         </tr>
       </thead>
-    </Table>
+ 
   );
 }
 
