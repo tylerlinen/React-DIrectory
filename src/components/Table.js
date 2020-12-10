@@ -15,7 +15,7 @@ function DataTable({ users }) {
                 <td className="align-middle">
                   <img src={picture.thumbnail} alt={email} class="image" />
                 </td>
-                <td className="firstName">{name.first}</td>
+                <td className="firstName">{name.first} shaboy</td>
                 <td className="firstLast">{name.last}</td>
                 <td className="email">{email}</td>
                 <td className="phone">{phone}</td>

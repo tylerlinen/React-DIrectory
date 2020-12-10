@@ -47,4 +47,4 @@ class DataArea extends Component {
     }
 }
 
-export default DataArea;
+export default DataArea; 
