@@ -1,7 +1,7 @@
 # About The Project
 <img width="1440" alt="Screen Shot 2021-05-13 at 10 07 44 PM" src="https://user-images.githubusercontent.com/66691586/118210147-0893bc00-b438-11eb-8acf-4a34dc74bf3f.png">
 
-It can be difficult to find individual data with large databases.
+It can be difficult to find individual data in a large database.
 
 This app allows you to easily access someones information in an employee directory.  
 
